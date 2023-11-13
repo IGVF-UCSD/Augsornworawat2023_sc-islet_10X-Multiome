@@ -3,7 +3,7 @@
 #SBATCH --output=/cellar/users/aklie/data/datasets/Augsornworawat2023_sc-islet_10X-Multiome/bin/data_processing/slurm_logs/%x.%A_%a.out
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=32G
-#SBATCH --time=14:00:00
+#SBATCH --time=14-00:00:00
 #SBATCH --array=1-18%18
 
 #####
@@ -20,7 +20,7 @@ source /cellar/users/aklie/.bashrc
 
 # Set file paths
 csv_dir=/cellar/users/aklie/data/datasets/Augsornworawat2023_sc-islet_10X-Multiome/metadata/09Nov23
-output_dir=/cellar/users/aklie/data/datasets/Augsornworawat2023_sc-islet_10X-Multiome/processed/10Nov23/cellranger
+output_dir=/cellar/users/aklie/data/datasets/Augsornworawat2023_sc-islet_10X-Multiome/processed/11Nov23/cellranger
 
 # If output directory does not exist, create it
 if [ ! -d $output_dir ]; then
